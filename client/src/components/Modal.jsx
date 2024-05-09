@@ -41,7 +41,7 @@ const Modal = () => {
         >
           <h1 className="font-bold text-2xl">
             {" "}
-            {modal?.updatedId ? "Post Güncelle" : "Post Paylas"}{" "}
+            {modal?.updatedId ? "Update Post" : "Share Post"}{" "}
           </h1>
           <AiOutlineClose size={25} className="cursor-pointer" />
         </div>
@@ -75,7 +75,7 @@ const Modal = () => {
           onClick={handlePost}
           className="w-full p-2 text-center bg-indigo-600 text-white cursor-pointer hover:bg-indigo-800"
         >
-          Paylas
+          {modal?.updatedId ? "Update" : "Share"}
         </div>
       </div>
     </div>

@@ -62,19 +62,17 @@ const Auth = () => {
         <div className="text-red-500 text-xsm cursor-pointer mb-4">
           {signUp ? (
             <span onClick={() => setSignUp(false)}>
-              Daha önce kayit yaptiniz mi?
+              Have you already registered?
             </span>
           ) : (
-            <span onClick={() => setSignUp(true)}>
-              Kayit olmak icin tiklayiniz
-            </span>
+            <span onClick={() => setSignUp(true)}>Click here to register.</span>
           )}
         </div>
         <div
           onClick={authFunc}
           className="cursor-pointer hover:bg-indigo-800 w-full p-2 text-center bg-indigo-600 text-white rounded-md"
         >
-          {signUp ? "Kayit Ol" : "Giris Yap"}
+          {signUp ? "Register" : "Login"}
         </div>
       </div>
     </div>
